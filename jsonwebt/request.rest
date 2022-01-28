@@ -1,0 +1,21 @@
+GET http://localhost:5000/users
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "restb",
+    "email": "restb@gmail.com",
+    "password": "rest2",
+    "confPassword": "rest2"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "restb@gmail.com",
+    "password": "rest2"
+}
